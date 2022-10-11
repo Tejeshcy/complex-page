@@ -1,18 +1,27 @@
 
 import './App.css';
 import Data from './Components/Data';
-import Homepage from './Components/Homepage';
+
+import {ProSidebarProvider} from 'react-pro-sidebar'
+
+import NewBar from './Components/NewBar';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 
 
 function App() {
   return (
-    <div >
-      <Homepage/>
+    <ProSidebarProvider>
+      <Header />
+      <NewBar/>
+      <Footer/>
+    </ProSidebarProvider>
       
       
       
-    </div>
+      
+    
   );
 }
 
